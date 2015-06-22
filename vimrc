@@ -143,7 +143,7 @@ set showcmd
 set t_Co=256
 set background=dark
 colorscheme shades-of-teal
-set guifont=DejaVu_Sans_Mono:h9
+set guifont=DejaVu_Sans_Mono:h13
 
 set relativenumber
 set number
@@ -237,6 +237,11 @@ set softtabstop=2
 set expandtab       " Expand TABs to spaces
 
 map § ^   " Use shift-$ to go to beginning of line
+
+"make < > shifts keep selection
+vnoremap < <gv
+vnoremap > >gv
+vnoremap = =gv
 
 map <C-up> <C-Y>
 map <C-down> <C-E>
