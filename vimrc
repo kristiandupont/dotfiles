@@ -87,7 +87,7 @@ noremap <S-F11> :call RotateHue(-10)<cr>
 
 " }}}
 
-:source $home/.sharedvimrc
+:source $HOME/.sharedvimrc
 
 
 " Detect filetypes
@@ -258,6 +258,9 @@ map <Space> <leader>
 
 " Make it easy to edit this file (mnemonic for the key sequence is 'e'dit 'v'imrc)
 nmap <silent> ,ev :e $MYVIMRC<cr>
+
+" Make it easy to edit the shared file (mnemonic for the key sequence is 'e'dit 's'hared)
+nmap <silent> ,es :e $HOME/.sharedvimrc<cr>
 
 " And to source this file as well (mnemonic for the key sequence is 's'ource 'v'imrc)
 nmap <silent> ,sv :so $MYVIMRC<cr>
