@@ -227,6 +227,9 @@ nnoremap <A-S-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 noremap <C-up> <C-Y>
 noremap <C-down> <C-E>
 
+" Map ctrl+backspace to delete previous word
+imap <C-BS> <C-W>
+
 if has("win32")
   "Windows options here
 
