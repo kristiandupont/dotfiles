@@ -1,37 +1,3 @@
-set incsearch
-set ignorecase
-set scrolloff=3
-set clipboard=unnamed
+:source e:\repositories\dotfiles\sharedvimrc
 
-" win32 seems to be false in vsvim..
-map § ^
-
-
-if has("win32")
-  "Windows options here
-  map ½ $
-  map § ^
-else
-  if has("unix")
-    let s:uname = system("uname")
-    if s:uname == "Darwin\n"
-      "Mac options here
-    endif
-  endif
-endif
-
-" Visual mode pressing * or # searches for the current selection
-" Super useful! From an idea by Michael Naumann
-"vnoremap <silent> * :call VisualSelection('f')<CR>
-"vnoremap <silent> # :call VisualSelection('b')<CR>
-vnoremap * :call VisualSelection('f')<CR>
-
-
-" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
-"nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
-"nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
-"nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-"nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-nnoremap <A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-nnoremap <A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
-
+map ï¿½ ^

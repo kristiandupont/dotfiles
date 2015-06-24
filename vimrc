@@ -87,6 +87,9 @@ noremap <S-F11> :call RotateHue(-10)<cr>
 
 " }}}
 
+:source $home/.sharedvimrc
+
+
 " Detect filetypes
 filetype plugin indent on
 
@@ -236,15 +239,15 @@ set tabstop=2
 set softtabstop=2
 set expandtab       " Expand TABs to spaces
 
-map § ^   " Use shift-$ to go to beginning of line
+noremap § ^   " Use shift-$ to go to beginning of line
 
 "make < > shifts keep selection
 vnoremap < <gv
 vnoremap > >gv
 vnoremap = =gv
 
-map <C-up> <C-Y>
-map <C-down> <C-E>
+noremap <C-up> <C-Y>
+noremap <C-down> <C-E>
 
 set guioptions-=T   " Hide toolbar
 set guioptions-=L   " Hide left-hand scrollbar (NERDTree)
