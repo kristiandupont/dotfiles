@@ -1,6 +1,14 @@
 set incsearch
 set scrolloff=3
-set clipboard=unnamed
+
+
+" Use system clipboard per default
+set clipboard=unnamed  " use the clipboards of vim and OSX
+
+" do not overwrite the default register when changing text
+noremap c "_c
+noremap cc "_cc
+noremap C "_C
 
 set ignorecase          " case insensitive searching
 set smartcase           " but become case sensitive if you type uppercase characters
@@ -11,6 +19,15 @@ set tabstop=2
 set softtabstop=2
 set expandtab       " Expand TABs to spaces
 
+"make < > shifts keep selection
+vnoremap < <gv
+vnoremap > >gv
+vnoremap = =gv
+
+" Use Space as leader 
+" (from http://www.reddit.com/r/vim/comments/1vdrxg/space_is_a_big_key_what_do_you_map_it_to/cerq68d)
+map <Space> <leader>
+
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
 "vnoremap <silent> * :call VisualSelection('f')<CR>
@@ -18,10 +35,6 @@ set expandtab       " Expand TABs to spaces
 vnoremap * :call VisualSelection('f')<CR>
 
 " Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
-"nnoremap <silent><C-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
-"nnoremap <silent><C-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
-"nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-"nnoremap <silent><A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 nnoremap <A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 nnoremap <A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 

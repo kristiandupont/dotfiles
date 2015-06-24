@@ -87,6 +87,7 @@ noremap <S-F11> :call RotateHue(-10)<cr>
 
 " }}}
 
+" This file contains settings shared between vsvim and vim.
 :source $HOME/.sharedvimrc
 
 
@@ -111,14 +112,7 @@ set noswapfile
 
 " Clipboard {{{
 
-" Use system clipboard per default
-set clipboard+=unnamed  " use the clipboards of vim and OSX
 set paste               " Paste from a OSX or from vim
-
-" do not overwrite the default register when changing text
-noremap c "_c
-noremap cc "_cc
-noremap C "_C
 
 " vp doesn't replace paste buffer
 function! RestoreRegister()
@@ -137,25 +131,22 @@ vmap <silent> <expr> p <sid>Repl()
 
 syntax on
 
-" 3 lines above and below cursor when scrolling
-set scrolloff=3
-
-set showmode
 set showcmd
+set showmode
+
+set guioptions-=T   " Hide toolbar
+set guioptions-=L   " Hide left-hand scrollbar (NERDTree)
 
 set t_Co=256
 set background=dark
 colorscheme shades-of-teal
-set guifont=DejaVu_Sans_Mono:h13
+set guifont=DejaVu_Sans_Mono:h11
 
 set relativenumber
 set number
 
 set laststatus=2
 set statusline=%<%f\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
-
-" Open as full-screen as possible.
-set lines=999 columns=9999  
 
 " }}}
 
@@ -230,22 +221,42 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " }}}
 
-noremap § ^   " Use shift-$ to go to beginning of line
-
-"make < > shifts keep selection
-vnoremap < <gv
-vnoremap > >gv
-vnoremap = =gv
+nnoremap <A-S-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+nnoremap <A-S-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 
 noremap <C-up> <C-Y>
 noremap <C-down> <C-E>
 
-set guioptions-=T   " Hide toolbar
-set guioptions-=L   " Hide left-hand scrollbar (NERDTree)
+if has("win32")
+  "Windows options here
 
-" Use Space as leader 
-" (from http://www.reddit.com/r/vim/comments/1vdrxg/space_is_a_big_key_what_do_you_map_it_to/cerq68d)
-map <Space> <leader>
+  noremap � ^ " Use shift-$ to go to beginning of line
+
+  " Ctrl-V is paste
+  map <C-V>		"+gP
+  cmap <C-V>		<C-R>+
+
+  " Use CTRL-S for saving, also in Insert mode
+  noremap <C-S>		:update<CR>
+  vnoremap <C-S>		<C-C>:update<CR>
+  inoremap <C-S>		<C-O>:update<CR>
+
+  " CTRL-F4 is Close window
+  noremap <C-F4> <C-W>c
+  inoremap <C-F4> <C-O><C-W>c
+  cnoremap <C-F4> <C-C><C-W>c
+  onoremap <C-F4> <C-C><C-W>c
+else
+  if has("unix")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+      "Mac options here
+
+      noremap § ^   " Use shift-$ to go to beginning of line
+    endif
+  endif
+endif
+
 
 " Make it easy to edit this file (mnemonic for the key sequence is 'e'dit 'v'imrc)
 nmap <silent> ,ev :e $MYVIMRC<cr>
