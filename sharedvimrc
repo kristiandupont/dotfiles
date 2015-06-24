@@ -1,7 +1,15 @@
 set incsearch
-set ignorecase
 set scrolloff=3
 set clipboard=unnamed
+
+set ignorecase          " case insensitive searching
+set smartcase           " but become case sensitive if you type uppercase characters
+set incsearch           " incremental search
+
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+set expandtab       " Expand TABs to spaces
 
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann

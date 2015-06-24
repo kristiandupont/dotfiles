@@ -230,15 +230,6 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " }}}
 
-set ignorecase          " case insensitive searching
-set smartcase           " but become case sensitive if you type uppercase characters
-set incsearch           " incremental search
-
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set expandtab       " Expand TABs to spaces
-
 noremap § ^   " Use shift-$ to go to beginning of line
 
 "make < > shifts keep selection
