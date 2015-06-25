@@ -1,4 +1,4 @@
-" vim:fdm=marker
+﻿" vim:fdm=marker
 
 set nocompatible              " be iMproved, required
 
@@ -233,7 +233,7 @@ imap <C-BS> <C-W>
 if has("win32")
   "Windows options here
 
-  noremap � ^ " Use shift-$ to go to beginning of line
+  noremap § ^ " Use shift-$ to go to beginning of line
 
   " Ctrl-V is paste
   map <C-V>		"+gP
@@ -256,6 +256,9 @@ else
       "Mac options here
 
       noremap § ^   " Use shift-$ to go to beginning of line
+      nnoremap ‹ :set paste<CR>m`o<Esc>``:set nopaste<CR>
+      nnoremap ∆ :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
     endif
   endif
 endif
