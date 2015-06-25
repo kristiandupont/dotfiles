@@ -221,9 +221,6 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " }}}
 
-nnoremap <A-S-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
-nnoremap <A-S-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
-
 noremap <C-up> <C-Y>
 noremap <C-down> <C-E>
 
@@ -249,6 +246,10 @@ if has("win32")
   inoremap <C-F4> <C-O><C-W>c
   cnoremap <C-F4> <C-C><C-W>c
   onoremap <C-F4> <C-C><C-W>c
+
+  nnoremap <A-S-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+  nnoremap <A-S-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+
 else
   if has("unix")
     let s:uname = system("uname")
@@ -258,6 +259,9 @@ else
       noremap § ^   " Use shift-$ to go to beginning of line
       nnoremap ‹ :set paste<CR>m`o<Esc>``:set nopaste<CR>
       nnoremap ∆ :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
+      nnoremap › m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
+      nnoremap ˝ m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 
     endif
   endif
