@@ -1,6 +1,7 @@
-﻿" vim:fdm=marker
+" vim:fdm=marker
 
 set nocompatible              " be iMproved, required
+set encoding=utf-8
 
 " Plugins {{{
 call plug#begin('~/.vim/plugged')
@@ -152,44 +153,20 @@ set statusline=%<%f\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
 
 " Window management {{{
 
-" Move the cursor to the window left of the current one
+" Move to windows with g + h/j/k/l
 noremap <silent> gh :wincmd h<cr>
-
-" Move the cursor to the window below the current one
 noremap <silent> gj :wincmd j<cr>
-
-" Move the cursor to the window above the current one
 noremap <silent> gk :wincmd k<cr>
-
-" Move the cursor to the window right of the current one
 noremap <silent> gl :wincmd l<cr>
 
-" Close the window below this one
+" Close windows with g + c + h/j/k/l
 noremap <silent> gcj :wincmd j<cr>:close<cr>
-
-" Close the window above this one
 noremap <silent> gck :wincmd k<cr>:close<cr>
-
-" Close the window to the left of this one
 noremap <silent> gch :wincmd h<cr>:close<cr>
-
-" Close the window to the right of this one
 noremap <silent> gcl :wincmd l<cr>:close<cr>
 
 " Close the current window
 noremap <silent> gcc :close<cr>
-
-" Move the current window to the right of the main Vim window
-noremap <silent> gml <C-W>L
-
-" Move the current window to the top of the main Vim window
-noremap <silent> gmk <C-W>K
-
-" Move the current window to the left of the main Vim window
-noremap <silent> gmh <C-W>H
-
-" Move the current window to the bottom of the main Vim window
-noremap <silent> gmj <C-W>J
 
 " Ctrl+K: new tab of current buffer like Code Browser
 noremap <C-K> :tab sp<cr>
@@ -200,6 +177,9 @@ set showtabline=2
 " Plain old tab switching
 nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-S-Tab> :tabprevious<CR>
+
+inoremap <C-Tab> <C-O>:tabnext<CR>
+inoremap <C-S-Tab> <C-O>:tabprevious<CR>
 
 " Go to tab by number
 noremap <D-1> 1gt
@@ -224,7 +204,10 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 noremap <C-up> <C-Y>
 noremap <C-down> <C-E>
 
-" Map ctrl+backspace to delete previous word
+" Open new/empty files in insert mode
+autocmd VimEnter * if empty(expand("%")) | startinsert | endif
+
+" Map ctrl+backspace to delete previous word in insert mode
 imap <C-BS> <C-W>
 
 if has("win32")
@@ -247,6 +230,8 @@ if has("win32")
   cnoremap <C-F4> <C-C><C-W>c
   onoremap <C-F4> <C-C><C-W>c
 
+  nnoremap <A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+  nnoremap <A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
   nnoremap <A-S-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
   nnoremap <A-S-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 
@@ -257,9 +242,9 @@ else
       "Mac options here
 
       noremap § ^   " Use shift-$ to go to beginning of line
+
       nnoremap ‹ :set paste<CR>m`o<Esc>``:set nopaste<CR>
       nnoremap ∆ :set paste<CR>m`O<Esc>``:set nopaste<CR>
-
       nnoremap › m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
       nnoremap ˝ m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 

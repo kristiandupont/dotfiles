@@ -34,7 +34,4 @@ map <Space> <leader>
 "vnoremap <silent> # :call VisualSelection('b')<CR>
 vnoremap * :call VisualSelection('f')<CR>
 
-" Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
-nnoremap <A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-nnoremap <A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 
