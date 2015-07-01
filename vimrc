@@ -31,8 +31,9 @@ Plug 'fholgado/minibufexpl.vim'
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'chrisbra/Colorizer'
 Plug 'Mark--Karkat'
-Plug 'Valloric/MatchTagAlways'
+"Plug 'Valloric/MatchTagAlways'
 Plug 'kristiandupont/shades-of-teal'
+Plug 'tpope/vim-abolish'
 
 call plug#end()
 
@@ -90,7 +91,6 @@ noremap <S-F11> :call RotateHue(-10)<cr>
 
 " This file contains settings shared between vsvim and vim.
 :source $HOME/.sharedvimrc
-
 
 " Detect filetypes
 filetype plugin indent on
