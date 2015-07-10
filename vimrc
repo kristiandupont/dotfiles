@@ -34,6 +34,7 @@ Plug 'Mark--Karkat'
 "Plug 'Valloric/MatchTagAlways'
 Plug 'kristiandupont/shades-of-teal'
 Plug 'tpope/vim-abolish'
+Plug 'rizzatti/dash.vim'
 
 call plug#end()
 
@@ -84,6 +85,13 @@ endif
 " Yes, this is silly. Use F11 to change colors. Just to get some variation.
 noremap <F11> :call RotateHue(10)<cr>
 noremap <S-F11> :call RotateHue(-10)<cr>
+
+" }}}
+
+" {{{ Dash
+
+" Map <leader> d to look up work under cursor.
+:nmap <silent> <leader>d <Plug>DashSearch
 
 " }}}
 
