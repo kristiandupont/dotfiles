@@ -1,4 +1,4 @@
-:source e:\repositories\dotfiles\sharedvimrc
+:source c:\repositories\dotfiles\sharedvimrc
 
 "nnoremap <A-S-j> m`:+g/\m^\s*$/d<CR>``:noh<CR>
 "nnoremap <A-S-k> m`:-g/\m^\s*$/d<CR>``:noh<CR>
