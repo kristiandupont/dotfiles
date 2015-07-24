@@ -3,4 +3,17 @@
 "nnoremap <A-S-j> m`:+g/\m^\s*$/d<CR>``:noh<CR>
 "nnoremap <A-S-k> m`:-g/\m^\s*$/d<CR>``:noh<CR>
 
-map � ^
+nnoremap ½ $
+vnoremap ½ $
+nnoremap § ^
+vnoremap § ^
+
+
+" Make it easy to edit this file (mnemonic for the key sequence is 'e'dit 'v'imrc)
+nmap ,ev :e c:\users\kristian\.vsvimrc<cr>
+
+" Make it easy to edit the shared file (mnemonic for the key sequence is 'e'dit 's'hared)
+nmap ,es :e c:\users\kristian\.sharedvimrc<cr>
+
+" And to source this file as well (mnemonic for the key sequence is 's'ource 'v'imrc)
+nmap ,sv :so c:\users\kristian\.vsvimrc<cr>

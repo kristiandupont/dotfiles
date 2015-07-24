@@ -149,7 +149,7 @@ set guioptions-=L   " Hide left-hand scrollbar (NERDTree)
 set t_Co=256
 set background=dark
 colorscheme shades-of-teal
-set guifont=DejaVu_Sans_Mono:h11
+set guifont=DejaVu_Sans_Mono:h9
 
 set relativenumber
 set number
@@ -221,7 +221,10 @@ imap <C-BS> <C-W>
 if has("win32")
   "Windows options here
 
-  noremap § ^ " Use shift-$ to go to beginning of line
+  nnoremap ½ $
+  vnoremap ½ $
+  nnoremap § ^
+  vnoremap § ^
 
   " Ctrl-V is paste
   map <C-V>		"+gP
