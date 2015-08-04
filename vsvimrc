@@ -3,8 +3,10 @@
 "nnoremap <A-S-j> m`:+g/\m^\s*$/d<CR>``:noh<CR>
 "nnoremap <A-S-k> m`:-g/\m^\s*$/d<CR>``:noh<CR>
 
+noremap ½ $
 nnoremap ½ $
 vnoremap ½ $
+noremap § ^
 nnoremap § ^
 vnoremap § ^
 
