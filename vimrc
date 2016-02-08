@@ -27,7 +27,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'huerotation.vim'
-Plug 'fholgado/minibufexpl.vim'
+"Plug 'fholgado/minibufexpl.vim'
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'chrisbra/Colorizer'
 Plug 'Mark--Karkat'
@@ -35,6 +35,7 @@ Plug 'Mark--Karkat'
 Plug 'kristiandupont/shades-of-teal'
 Plug 'tpope/vim-abolish'
 Plug 'rizzatti/dash.vim'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
@@ -213,7 +214,7 @@ noremap <C-up> <C-Y>
 noremap <C-down> <C-E>
 
 " Open new/empty files in insert mode
-autocmd VimEnter * if empty(expand("%")) | startinsert | endif
+"autocmd VimEnter * if empty(expand("%")) | startinsert | endif
 
 " Map ctrl+backspace to delete previous word in insert mode
 imap <C-BS> <C-W>
@@ -247,9 +248,10 @@ else
   if has("unix")
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
-      "Mac options here
+      " Mac options here
 
-      noremap § ^   " Use shift-$ to go to beginning of line
+      " Use shift-$ to go to beginning of line
+      noremap § ^
 
       nnoremap ‹ :set paste<CR>m`o<Esc>``:set nopaste<CR>
       nnoremap ∆ :set paste<CR>m`O<Esc>``:set nopaste<CR>
