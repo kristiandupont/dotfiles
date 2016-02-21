@@ -27,7 +27,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'huerotation.vim'
-"Plug 'fholgado/minibufexpl.vim'
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'chrisbra/Colorizer'
 Plug 'Mark--Karkat'
@@ -42,14 +41,12 @@ call plug#end()
 " NERDTree {{{
 
 " Map F3 to NERDTree
-silent! nmap <C-l> :NERDTreeToggle<CR>
-"silent! map <F3> :NERDTreeFind<CR>
-"let g:NERDTreeMapActivateNode="<F3>"
-"let g:NERDTreeMapPreview="<F4>"
+"silent! nmap <C-l> :NERDTreeToggle<CR>
+silent! map <C-l> :NERDTreeFind<CR>
 
 let NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
-let g:NERDTreeWinSize=50
+let g:NERDTreeWinSize=80
 
 " }}}
 
@@ -210,11 +207,12 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " }}}
 
+" crtl+up/down scrolls screen like in other editors
 noremap <C-up> <C-Y>
 noremap <C-down> <C-E>
 
-" Open new/empty files in insert mode
-"autocmd VimEnter * if empty(expand("%")) | startinsert | endif
+" Type jk to exit insert mode instead of pressing escape 
+inoremap jk <esc>
 
 " Map ctrl+backspace to delete previous word in insert mode
 imap <C-BS> <C-W>
@@ -222,7 +220,8 @@ imap <C-BS> <C-W>
 if has("win32")
   "Windows options here
 
-  noremap § ^ " Use shift-$ to go to beginning of line
+  " Use shift-$ to go to beginning of line
+  noremap § ^
 
   " Ctrl-V is paste
   map <C-V>		"+gP
@@ -249,6 +248,9 @@ else
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
       " Mac options here
+
+      " Allow ctrl-alt-* combos by treating alt as meta
+      "set macmeta
 
       " Use shift-$ to go to beginning of line
       noremap § ^
