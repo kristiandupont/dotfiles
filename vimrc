@@ -4,6 +4,7 @@ set nocompatible              " be iMproved, required
 set encoding=utf-8
 
 " Plugins {{{
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'rstacruz/sparkup', {'rtp': 'vim/', 'for': 'html' }
@@ -40,20 +41,9 @@ call plug#end()
 
 " NERDTree {{{
 
-" Map F3 to NERDTree
-"silent! nmap <C-l> :NERDTreeToggle<CR>
-silent! map <C-l> :NERDTreeFind<CR>
-
 let NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize=80
-
-" }}}
-
-" Tagbar {{{
-
-" Map F8 to Tagbar
-nmap <F8> :TagbarToggle<CR>
 
 " }}}
 
@@ -72,28 +62,9 @@ else
 endif
 " }}}
 
-" Airline {{{
-
-" let g:airline#extensions#tabline#enabled = 1
-
 " }}}
 
-" huerotation {{{
-
-" Yes, this is silly. Use F11 to change colors. Just to get some variation.
-noremap <F11> :call RotateHue(10)<cr>
-noremap <S-F11> :call RotateHue(-10)<cr>
-
-" }}}
-
-" {{{ Dash
-
-" Map <leader> d to look up work under cursor.
-:nmap <silent> <leader>d <Plug>DashSearch
-
-" }}}
-
-" }}}
+" General {{{
 
 " This file contains settings shared between vsvim and vim.
 :source $HOME/.sharedvimrc
@@ -117,21 +88,6 @@ set wildignore+=**/tmp/cache      " ignores tmp/cache
 " No annoying .swp files, please. I save frequently enough.
 set noswapfile
 
-" Clipboard {{{
-
-set paste               " Paste from a OSX or from vim
-
-" vp doesn't replace paste buffer
-function! RestoreRegister()
-  let @" = s:restore_reg
-  return ''
-endfunction
-function! s:Repl()
-  let s:restore_reg = @"
-  return "p@=RestoreRegister()\<cr>"
-endfunction
-vmap <silent> <expr> p <sid>Repl()
-
 " }}}
 
 " Appearance {{{
@@ -141,9 +97,16 @@ syntax on
 set showcmd
 set showmode
 
-set guioptions-=T   " Hide toolbar
-set guioptions-=L   " Hide left-hand scrollbar (NERDTree)
+" Always show the tab bar
+set showtabline=2
 
+" Hide toolbar
+set guioptions-=T   
+
+" Hide left-hand scrollbar (NERDTree)
+set guioptions-=L   
+
+" Colors
 set t_Co=256
 set background=dark
 colorscheme shades-of-teal
@@ -157,65 +120,7 @@ set statusline=%<%f\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
 
 " }}}
 
-" Window management {{{
-
-" Move to windows with g + h/j/k/l
-noremap <silent> gh :wincmd h<cr>
-noremap <silent> gj :wincmd j<cr>
-noremap <silent> gk :wincmd k<cr>
-noremap <silent> gl :wincmd l<cr>
-
-" Close windows with g + c + h/j/k/l
-noremap <silent> gcj :wincmd j<cr>:close<cr>
-noremap <silent> gck :wincmd k<cr>:close<cr>
-noremap <silent> gch :wincmd h<cr>:close<cr>
-noremap <silent> gcl :wincmd l<cr>:close<cr>
-
-" Close the current window
-noremap <silent> gcc :close<cr>
-
-" Ctrl+K: new tab of current buffer like Code Browser
-noremap <C-K> :tab sp<cr>
-
-" Always show the tab bar
-set showtabline=2
-
-" Plain old tab switching
-nnoremap <C-Tab> :tabnext<CR>
-nnoremap <C-S-Tab> :tabprevious<CR>
-
-inoremap <C-Tab> <C-O>:tabnext<CR>
-inoremap <C-S-Tab> <C-O>:tabprevious<CR>
-
-" Go to tab by number
-noremap <D-1> 1gt
-noremap <D-2> 2gt
-noremap <D-3> 3gt
-noremap <D-4> 4gt
-noremap <D-5> 5gt
-noremap <D-6> 6gt
-noremap <D-7> 7gt
-noremap <D-8> 8gt
-noremap <D-9> 9gt
-noremap <D-0> :tablast<cr>
-
-" Switch buffer
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-
-nnoremap <F5> :buffers<CR>:buffer<Space>
-
-" }}}
-
-" crtl+up/down scrolls screen like in other editors
-noremap <C-up> <C-Y>
-noremap <C-down> <C-E>
-
-" Type jk to exit insert mode instead of pressing escape 
-inoremap jk <esc>
-
-" Map ctrl+backspace to delete previous word in insert mode
-imap <C-BS> <C-W>
+" Platform normalization {{{
 
 if has("win32")
   "Windows options here
@@ -264,12 +169,111 @@ else
   endif
 endif
 
+ " }}}
+
+" vimrc editing and sourcing {{{
 
 " Make it easy to edit this file (mnemonic for the key sequence is 'e'dit 'v'imrc)
-nmap <silent> ,ev :e $MYVIMRC<cr>
+nmap <silent> <leader>ev :e $MYVIMRC<cr>
 
 " Make it easy to edit the shared file (mnemonic for the key sequence is 'e'dit 's'hared)
-nmap <silent> ,es :e $HOME/.sharedvimrc<cr>
+nmap <silent> <leader>es :e $HOME/.sharedvimrc<cr>
 
 " And to source this file as well (mnemonic for the key sequence is 's'ource 'v'imrc)
-nmap <silent> ,sv :so $MYVIMRC<cr>
+nmap <silent> <leader>sv :so $MYVIMRC<cr>
+
+" }}}
+
+" Key normalization with other editors {{{
+
+" Clipboard {{{
+
+set paste               " Paste from a OSX or from vim
+
+" vp doesn't replace paste buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
+
+" }}}
+
+" crtl+up/down scrolls screen like in other editors
+noremap <C-up> <C-Y>
+noremap <C-down> <C-E>
+
+" Map ctrl+backspace to delete previous word in insert mode
+imap <C-BS> <C-W>
+
+" Plain old tab switching
+nnoremap <C-Tab> :tabnext<CR>
+nnoremap <C-S-Tab> :tabprevious<CR>
+
+inoremap <C-Tab> <C-O>:tabnext<CR>
+inoremap <C-S-Tab> <C-O>:tabprevious<CR>
+
+" Go to tab by number
+noremap <D-1> 1gt
+noremap <D-2> 2gt
+noremap <D-3> 3gt
+noremap <D-4> 4gt
+noremap <D-5> 5gt
+noremap <D-6> 6gt
+noremap <D-7> 7gt
+noremap <D-8> 8gt
+noremap <D-9> 9gt
+noremap <D-0> :tablast<cr>
+
+" }}}
+
+" Misc key bindings
+
+" Type jk or kj to exit insert mode instead of pressing escape 
+inoremap jk <esc>
+inoremap kj <esc>
+
+" Map F8 to Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+" Change hue with F11 and Shift F11
+noremap <F11> :call RotateHue(10)<cr>
+noremap <S-F11> :call RotateHue(-10)<cr>
+
+" Map <leader> d to look up work under cursor.
+:nmap <silent> <leader>d <Plug>DashSearch
+
+" Map F3 to NERDTree
+silent! map <S-l> :NERDTreeToggle<CR>
+silent! nmap <C-l> :NERDTreeFind<CR>
+
+" Move to windows with space + h/j/k/l {{{
+noremap <silent> <leader>h :wincmd h<cr>
+noremap <silent> <leader>j :wincmd j<cr>
+noremap <silent> <leader>k :wincmd k<cr>
+noremap <silent> <leader>l :wincmd l<cr>
+" }}}
+
+" Close windows with g + c + h/j/k/l {{{
+noremap <silent> gcj :wincmd j<cr>:close<cr>
+noremap <silent> gck :wincmd k<cr>:close<cr>
+noremap <silent> gch :wincmd h<cr>:close<cr>
+noremap <silent> gcl :wincmd l<cr>:close<cr>
+" }}}
+
+" Close the current window
+noremap <silent> gcc :close<cr>
+
+" Ctrl+K: new tab of current buffer like Code Browser
+noremap <C-K> :tab sp<cr>
+
+" Switch buffer
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
