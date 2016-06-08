@@ -10,12 +10,15 @@ noremap § ^
 nnoremap § ^
 vnoremap § ^
 
+" Type jk or kj to exit insert mode instead of pressing escape 
+inoremap jk <esc>
+inoremap kj <esc>
 
 " Make it easy to edit this file (mnemonic for the key sequence is 'e'dit 'v'imrc)
-nmap ,ev :e c:\users\kristian\.vsvimrc<cr>
+nmap <leader>ev :e c:\users\kristian\.vsvimrc<cr>
 
 " Make it easy to edit the shared file (mnemonic for the key sequence is 'e'dit 's'hared)
-nmap ,es :e c:\users\kristian\.sharedvimrc<cr>
+nmap <leader>es :e c:\users\kristian\.sharedvimrc<cr>
 
 " And to source this file as well (mnemonic for the key sequence is 's'ource 'v'imrc)
-nmap ,sv :so c:\users\kristian\.vsvimrc<cr>
+nmap <leader>sv :so c:\users\kristian\.vsvimrc<cr>
