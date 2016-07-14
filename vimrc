@@ -36,6 +36,7 @@ Plug 'kristiandupont/shades-of-teal'
 Plug 'tpope/vim-abolish'
 Plug 'rizzatti/dash.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'lukaszkorecki/workflowish'
 
 call plug#end()
 
