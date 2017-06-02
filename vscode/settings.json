@@ -1,0 +1,32 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.editor.enablePreview": false,
+    "typescript.check.tscVersion": false,
+    "vim.enableNeovim": true,
+    "vim.useSystemClipboard": true,
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "leader",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "textmarker.markText",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "window.openFilesInNewWindow": "off",
+    "vsicons.dontShowNewVersionMessage": true,
+    "vsicons.projectDetection.disableDetect": true,
+    "editor.wordWrap": "off",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.editor.showTabs": false,
+    "vim.disableAnnoyingNeovimMessage": true
+}
