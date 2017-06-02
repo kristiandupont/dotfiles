@@ -2,6 +2,7 @@
 {
     "workbench.editor.enablePreview": false,
     "typescript.check.tscVersion": false,
+    "extensions.autoUpdate": true,
     "vim.enableNeovim": true,
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
