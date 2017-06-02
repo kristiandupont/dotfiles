@@ -31,17 +31,17 @@ if [ -e "$VSCODE_DIR" ]; then
 	if [ -e "$VSCODE_DIR/keybindings.json" ]; then
 		rm "$VSCODE_DIR/keybindings.json"
 	fi
-	ln -s ./vscode/keybindings.json "$VSCODE_DIR"
+	ln -s "$(pwd)/vscode/keybindings.json" "$VSCODE_DIR"
 
 	if [ -e "$VSCODE_DIR/settings.json" ]; then
 		rm "$VSCODE_DIR/settings.json"
 	fi
-	ln -s ./vscode/settings.json "$VSCODE_DIR/settings.json"
+	ln -s "$(pwd)/vscode/settings.json" "$VSCODE_DIR/settings.json"
 
 	if [ -e "$VSCODE_DIR/snippets" ]; then
 		rm -rf "$VSCODE_DIR/snippets"
 	fi
-	ln -s ./vscode/snippets "$VSCODE_DIR"
+	ln -s "$(pwd)/vscode/snippets" "$VSCODE_DIR"
 
 fi
 
