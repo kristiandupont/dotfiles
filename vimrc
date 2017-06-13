@@ -111,7 +111,7 @@ set guioptions-=L
 set t_Co=256
 set background=dark
 colorscheme shades-of-teal
-set guifont=DejaVu_Sans_Mono:h11
+set guifont=DejaVu_Sans_Mono:h11 " Smaller font is set on Windows. See the Platform normalization section below.
 
 set relativenumber
 set number
@@ -148,6 +148,9 @@ if has("win32")
   nnoremap <A-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
   nnoremap <A-S-j> m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
   nnoremap <A-S-k> m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
+
+  " Set a smaller font on Windows..
+  set guifont=DejaVu_Sans_Mono:h9
 
 else
   if has("unix")
