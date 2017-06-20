@@ -29,5 +29,6 @@
     "editor.detectIndentation": false,
     "workbench.iconTheme": "vs-minimal",
     "workbench.editor.showTabs": false,
-    "vim.disableAnnoyingNeovimMessage": true
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.minimap.enabled": false
 }
