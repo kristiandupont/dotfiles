@@ -21,6 +21,7 @@
         }
     ],
     "vim.leader": "<space>",
+    "vim.easymotion": true,
     "window.openFilesInNewWindow": "off",
     "vsicons.dontShowNewVersionMessage": true,
     "vsicons.projectDetection.disableDetect": true,
