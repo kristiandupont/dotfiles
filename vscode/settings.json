@@ -21,6 +21,8 @@
         }
     ],
     "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.easymotionMarkerFontSize": "14",
     "window.openFilesInNewWindow": "off",
     "vsicons.dontShowNewVersionMessage": true,
     "vsicons.projectDetection.disableDetect": true,
@@ -29,5 +31,9 @@
     "editor.detectIndentation": false,
     "workbench.iconTheme": "vs-minimal",
     "workbench.editor.showTabs": false,
-    "vim.disableAnnoyingNeovimMessage": true
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "editor.fontSize": 11,
+    "terminal.integrated.fontSize": 11
 }
