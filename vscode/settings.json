@@ -35,5 +35,6 @@
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
     "editor.fontSize": 11,
-    "terminal.integrated.fontSize": 11
+    "terminal.integrated.fontSize": 11,
+    "files.insertFinalNewline": true
 }
