@@ -44,5 +44,3 @@ if [ -e "$VSCODE_DIR" ]; then
 	ln -s "$(pwd)/vscode/snippets" "$VSCODE_DIR"
 
 fi
-
-
