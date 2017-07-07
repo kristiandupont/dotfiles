@@ -38,6 +38,21 @@
     "terminal.integrated.fontSize": 11,
     "files.insertFinalNewline": true,
     "editor.renderWhitespace": "all",
-    "extension-manager.extensions":[
+    "extension-manager.extensions": [
+        "WallabyJs.quokka-vscode",
+        "WallabyJs.wallaby-vscode",
+        "capaj.vscode-exports-autocomplete",
+        "dbaeumer.vscode-eslint",
+        "eg2.tslint",
+        "formulahendry.auto-close-tag",
+        "ms-vscode.cpptools",
+        "ms-vscode.csharp",
+        "msjsdiag.debugger-for-chrome",
+        "robertohuertasm.vscode-icons",
+        "ryu1kn.text-marker",
+        "vadimcn.vscode-lldb",
+        "vscodevim.vim",
+        "vsmobile.vscode-react-native",
+        "wmaurer.change-case"
     ]
 }
