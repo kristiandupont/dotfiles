@@ -54,5 +54,8 @@
         "vscodevim.vim",
         "vsmobile.vscode-react-native",
         "wmaurer.change-case"
-    ]
-}
+    ],
+    "files.associations": {
+      "*.erb": "markdown"
+    }
+  }
