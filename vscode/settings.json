@@ -56,5 +56,7 @@
     ],
     "files.associations": {
       "*.erb": "markdown"
-    }
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "search.useIgnoreFilesByDefault": true
   }
