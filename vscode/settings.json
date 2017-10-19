@@ -1,7 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
     "workbench.editor.enablePreview": false,
-    "typescript.check.tscVersion": false,
     "extensions.autoUpdate": true,
     "vim.enableNeovim": true,
     "vim.useSystemClipboard": true,
@@ -24,8 +23,6 @@
     "vim.easymotion": true,
     "vim.easymotionMarkerFontSize": "14",
     "window.openFilesInNewWindow": "off",
-    "vsicons.dontShowNewVersionMessage": true,
-    "vsicons.projectDetection.disableDetect": true,
     "editor.wordWrap": "off",
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
@@ -38,25 +35,11 @@
     "terminal.integrated.fontSize": 11,
     "files.insertFinalNewline": true,
     "editor.renderWhitespace": "all",
-    "extension-manager.extensions": [
-        "WallabyJs.quokka-vscode",
-        "WallabyJs.wallaby-vscode",
-        "capaj.vscode-exports-autocomplete",
-        "dbaeumer.vscode-eslint",
-        "eg2.tslint",
-        "formulahendry.auto-close-tag",
-        "ms-vscode.cpptools",
-        "ms-vscode.csharp",
-        "msjsdiag.debugger-for-chrome",
-        "ryu1kn.text-marker",
-        "vadimcn.vscode-lldb",
-        "vscodevim.vim",
-        "vsmobile.vscode-react-native",
-        "wmaurer.change-case"
-    ],
     "files.associations": {
       "*.erb": "markdown"
     },
     "workbench.colorTheme": "Visual Studio Dark",
-    "search.useIgnoreFilesByDefault": true
+    "search.useIgnoreFilesByDefault": true,
+    "extensions.ignoreRecommendations": false,
+    "workbench.sideBar.location": "right"
   }
