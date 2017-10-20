@@ -3,6 +3,7 @@
     "workbench.editor.enablePreview": false,
     "extensions.autoUpdate": true,
     "vim.enableNeovim": true,
+    "vim.neovimPath": "C:\\Program Files\\Neovim\bin\\nvim.exe",
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -41,5 +42,6 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "search.useIgnoreFilesByDefault": true,
     "extensions.ignoreRecommendations": false,
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
   }
