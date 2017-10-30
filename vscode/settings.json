@@ -3,7 +3,6 @@
     "workbench.editor.enablePreview": false,
     "extensions.autoUpdate": true,
     "vim.enableNeovim": true,
-    "vim.neovimPath": "C:\\Program Files\\Neovim\bin\\nvim.exe",
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
