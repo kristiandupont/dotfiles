@@ -4,6 +4,7 @@
     "extensions.autoUpdate": true,
     "vim.enableNeovim": true,
     "vim.useSystemClipboard": true,
+    "vim.foldfix": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": ["leader", "m"],
@@ -28,8 +29,8 @@
     "vim.disableAnnoyingNeovimMessage": true,
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
-    "editor.fontSize": 11,
-    "terminal.integrated.fontSize": 11,
+    "editor.fontSize": 10.5,
+    "terminal.integrated.fontSize": 10.5,
     "files.insertFinalNewline": true,
     "editor.renderWhitespace": "all",
     "files.associations": {
