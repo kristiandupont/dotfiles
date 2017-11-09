@@ -1,43 +1,47 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "workbench.editor.enablePreview": false,
-    "extensions.autoUpdate": true,
-    "vim.enableNeovim": true,
-    "vim.useSystemClipboard": true,
-    "vim.foldfix": true,
-    "vim.otherModesKeyBindingsNonRecursive": [
+  "editor.lineNumbers": "on",
+  "editor.wordWrap": "off",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 10.5,
+  "editor.renderWhitespace": "all",
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": false,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.erb": "markdown"
+  },
+  "search.useIgnoreFilesByDefault": true,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "vim.enableNeovim": true,
+  "vim.useSystemClipboard": true,
+  "vim.foldfix": true,
+  "vim.otherModesKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "m"
+      ],
+      "after": [],
+      "commands": [
         {
-            "before": ["leader", "m"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "textmarker.markText",
-                    "args": []
-                }
-            ]
+          "command": "textmarker.markText",
+          "args": []
         }
-    ],
-    "vim.leader": "<space>",
-    "vim.easymotion": true,
-    "vim.easymotionMarkerFontSize": "14",
-    "window.openFilesInNewWindow": "off",
-    "editor.wordWrap": "off",
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "workbench.iconTheme": "vs-minimal",
-    "workbench.editor.showTabs": false,
-    "vim.disableAnnoyingNeovimMessage": true,
-    "editor.minimap.enabled": false,
-    "window.zoomLevel": 0,
-    "editor.fontSize": 10.5,
-    "terminal.integrated.fontSize": 10.5,
-    "files.insertFinalNewline": true,
-    "editor.renderWhitespace": "all",
-    "files.associations": {
-      "*.erb": "markdown"
-    },
-    "search.useIgnoreFilesByDefault": true,
-    "extensions.ignoreRecommendations": false,
-    "workbench.sideBar.location": "right",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
-  }
+      ]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.disableAnnoyingNeovimMessage": true,
+  "window.openFilesInNewWindow": "off",
+  "window.zoomLevel": 0,
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.editor.showTabs": false,
+  "workbench.sideBar.location": "right"
+}
