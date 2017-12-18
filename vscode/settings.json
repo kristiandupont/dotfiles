@@ -13,6 +13,16 @@
     "*.erb": "markdown"
   },
   "files.insertFinalNewline": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
   "gitlens.codeLens.enabled": false,
   "search.useIgnoreFilesByDefault": true,
   "terminal.integrated.cursorBlinking": true,
@@ -44,16 +54,6 @@
   "window.zoomLevel": 0,
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": false,
-  "workbench.sideBar.location": "right",
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
-  },
-  "workbench.iconTheme": "vs-minimal"
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.sideBar.location": "right"
 }
