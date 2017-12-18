@@ -48,5 +48,22 @@
       "key": "ctrl+f",
       "command": "-extension.vim_ctrl+f",
       "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl"
+    },
+    {
+      "key": "cmd+[Semicolon]",
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "ctrl+shift+[Equal]",
+      "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "shift+cmd+[Semicolon]",
+      "command": "workbench.action.terminal.new"
+    },
+    {
+      "key": "shift+alt+7",
+      "command": "-gitlens.showCommitSearch",
+      "when": "gitlens:enabled"
     }
   ]

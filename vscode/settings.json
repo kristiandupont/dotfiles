@@ -13,6 +13,7 @@
   "files.associations": {
     "*.erb": "markdown"
   },
+  "gitlens.codeLens.enabled": false,
   "search.useIgnoreFilesByDefault": true,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
@@ -43,5 +44,15 @@
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vs-minimal",
   "workbench.editor.showTabs": false,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  }
 }
