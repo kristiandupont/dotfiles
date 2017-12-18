@@ -1,25 +1,28 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.lineNumbers": "on",
-  "editor.wordWrap": "off",
-  "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "editor.minimap.enabled": false,
   "editor.fontSize": 10.5,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
-  "files.insertFinalNewline": true,
   "files.associations": {
     "*.erb": "markdown"
   },
+  "files.insertFinalNewline": true,
   "gitlens.codeLens.enabled": false,
   "search.useIgnoreFilesByDefault": true,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
   "vim.enableNeovim": true,
-  "vim.useSystemClipboard": true,
   "vim.foldfix": true,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.leader": "<space>",
   "vim.otherModesKeyBindingsNonRecursive": [
     {
       "before": [
@@ -35,14 +38,10 @@
       ]
     }
   ],
-  "vim.leader": "<space>",
-  "vim.easymotion": true,
-  "vim.easymotionMarkerFontSize": "14",
-  "vim.disableAnnoyingNeovimMessage": true,
+  "vim.useSystemClipboard": true,
   "window.openFilesInNewWindow": "off",
   "window.zoomLevel": 0,
   "workbench.editor.enablePreview": false,
-  "workbench.iconTheme": "vs-minimal",
   "workbench.editor.showTabs": false,
   "workbench.sideBar.location": "right",
   "gitlens.advanced.messages": {
