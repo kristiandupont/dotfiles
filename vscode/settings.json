@@ -54,5 +54,6 @@
     "suppressNoRepositoryWarning": false,
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
-  }
+  },
+  "workbench.iconTheme": "vs-minimal"
 }
