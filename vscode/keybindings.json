@@ -90,5 +90,15 @@
       "key": "ctrl+f4",
       "command": "-extension.node-debug.pickLoadedScript",
       "when": "debugType == 'node2'"
+    },
+    {
+      "key": "f2",
+      "command": "renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "enter",
+      "command": "-renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
     }
   ]
