@@ -44,12 +44,10 @@
 ;Alt+backspace and arrow keys should work like ctrl+*, like on mac.
 !Backspace::Send ^{Backspace}
 
-#IfWinNotActive ahk_exe chrome.exe
-!Left::Send ^{Left}
-<!+Left::Send ^+{Left}
-!Right::Send ^{Right}
-<!+Right::Send ^+{Right}
-#IfWinNotActive
+;!Left::Send ^{Left}
+;<!+Left::Send ^+{Left}
+;!Right::Send ^{Right}
+;<!+Right::Send ^+{Right}
 
 ; Alt-shift-7 should insert backslash
 !+7::Send ^!<
