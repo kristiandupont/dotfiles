@@ -24,7 +24,7 @@
     "suppressWelcomeNotice": true
   },
   "gitlens.codeLens.enabled": false,
-  "search.useIgnoreFilesByDefault": true,
+  "prettier.singleQuote": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
@@ -55,5 +55,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vs-minimal",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "[javascript]": {}
 }
