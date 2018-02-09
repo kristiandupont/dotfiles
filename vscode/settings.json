@@ -56,5 +56,6 @@
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "right",
-  "[javascript]": {}
+  "[javascript]": {},
+  "vim.disableExtension": false
 }
