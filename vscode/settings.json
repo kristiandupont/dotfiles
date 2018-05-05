@@ -21,17 +21,19 @@
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
     "suppressUpdateNotice": false,
     "suppressWelcomeNotice": true
   },
   "gitlens.codeLens.enabled": false,
+  "npm.enableScriptExplorer": true,
   "search.useIgnoreFiles": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
-  "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  //"vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
@@ -59,5 +61,6 @@
   "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "right",
   "vim.disableExtension": false,
-  "typescript.tsserver.log": "verbose"
+  "typescript.tsserver.log": "verbose",
+  "gitlens.keymap": "chorded"
 }
