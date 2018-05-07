@@ -9,6 +9,7 @@
   "editor.wordWrap": "off",
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
+  "explorer.autoReveal": false,
   "files.associations": {
     "*.erb": "markdown"
   },
