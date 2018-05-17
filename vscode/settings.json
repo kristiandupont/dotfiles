@@ -33,7 +33,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
-  "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  //"vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
@@ -47,7 +47,7 @@
       "after": [],
       "commands": [
         {
-          "command": "textmarker.markText",
+          "command": "textmarker.toggleHighlight",
           "args": []
         }
       ]
