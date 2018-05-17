@@ -18,10 +18,6 @@
       "key": "alt+k",
       "command": "editor.action.insertLineBefore",
       "when": "editorTextFocus && !editorReadonly"
-    },{
-      "key": "ctrl+shift+e",
-      "command": "macros.revealFileInExplorer",
-      "when": "editorTextFocus"
     },
     {
       "key": "ctrl+shift+enter",
@@ -109,13 +105,5 @@
       "key": "enter",
       "command": "-renameFile",
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-    },
-    {
-      "key": "ctrl+shift+alt+e",
-      "command": "workbench.view.explorer"
-    },
-    {
-      "key": "ctrl+shift+e",
-      "command": "-workbench.view.explorer"
     }
   ]
