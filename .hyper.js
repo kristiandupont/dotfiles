@@ -1,4 +1,4 @@
-// Future versions of Hyper may add additional config options,
+﻿// Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
@@ -27,6 +27,9 @@ module.exports = {
 
     // border color (window, tabs)
     borderColor: '#555',
+
+    // opacity
+    opacity: 0.93,
 
     // custom css to embed in the main window
     css: '',
