@@ -37,7 +37,7 @@
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
-  "vim.useCtrlKeys": false,
+  "vim.useCtrlKeys": true,
   "vim.otherModesKeyBindingsNonRecursive": [
     {
       "before": [
@@ -53,7 +53,21 @@
       ]
     }
   ],
-  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+        "before": ["C-v"],
+        "after": [],
+        "commands": "editor.action.clipboardPasteAction"
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+    "<C-x>": false,
+    "<C-j>": false
+  },
+  "vim.useSystemClipboard": false,
   "window.openFilesInNewWindow": "off",
   "window.zoomLevel": 0,
   "workbench.editor.enablePreview": false,
