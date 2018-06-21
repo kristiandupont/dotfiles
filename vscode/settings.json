@@ -38,7 +38,7 @@
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
   "vim.useCtrlKeys": true,
-  "vim.otherModesKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": [
         "leader",
@@ -77,5 +77,6 @@
   "vim.disableExtension": false,
   "typescript.tsserver.log": "verbose",
   "gitlens.keymap": "chorded",
-  "gitlens.historyExplorer.enabled": true
+  "gitlens.historyExplorer.enabled": true,
+  "workbench.colorTheme": "Nord"
 }
