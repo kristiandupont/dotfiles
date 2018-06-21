@@ -78,5 +78,5 @@
   "typescript.tsserver.log": "verbose",
   "gitlens.keymap": "chorded",
   "gitlens.historyExplorer.enabled": true,
-  "workbench.colorTheme": "Nord"
+  "workbench.colorTheme": "Monokai Dimmed"
 }
