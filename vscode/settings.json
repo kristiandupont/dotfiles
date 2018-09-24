@@ -79,6 +79,25 @@
   "typescript.tsserver.log": "verbose",
   "gitlens.keymap": "chorded",
   "gitlens.historyExplorer.enabled": true,
-  "workbench.colorTheme": "Monokai Dimmed",
-  "breadcrumbs.enabled": true
+  "workbench.colorTheme": "Palenight Theme",
+  "breadcrumbs.enabled": true,
+  "window.titleBarStyle": "custom",
+  "window.restoreWindows": "none",
+  "textmarker.defaultHighlightColor": "#fce00c",
+  "textmarker.defaultHighlightOpacity": 1,
+  "textmarker.highlightColors": [
+    "#fc800c",
+    "darkmagenta",
+    "darkolivegreen",
+    "darkslateblue",
+    "darkslategray",
+    "darkviolet",
+    "darkblue",
+    "darkturquoise",
+    "darkgray",
+    "darkkhaki",
+    "darkorange",
+    "darksalmon",
+    "darkseagreen"
+  ]
 }
