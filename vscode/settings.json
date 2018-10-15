@@ -13,7 +13,6 @@
     "*.erb": "markdown"
   },
   "files.insertFinalNewline": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
