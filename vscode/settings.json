@@ -33,6 +33,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
   //"vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
@@ -101,5 +102,8 @@
   ],
   "prettier.eslintIntegration": true,
   "prettier.printWidth": 120,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "terminal.integrated.rendererType": "dom"
 }
