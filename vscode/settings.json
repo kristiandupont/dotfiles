@@ -10,22 +10,24 @@
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
-    "*.erb": "markdown"
+    "*.erb": "markdown",
+    "*.mdconf": "markdown",
+    "*.har": "json"
   },
   "files.insertFinalNewline": true,
   "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": true,
+    "suppressFileNotUnderSourceControlWarning": true,
     "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": false,
+    "suppressResultsExplorerNotice": true,
     "suppressWelcomeNotice": true
   },
   "gitlens.codeLens.enabled": false,
+  "json.schemas": [
+    { 
+      "fileMatch": ["*.har"],
+      "url": "https://raw.githubusercontent.com/jarib/har/master/schema.json"
+    }
+  ],
   "npm.enableScriptExplorer": true,
   "search.useIgnoreFiles": true,
   "terminal.integrated.cursorBlinking": true,
@@ -34,7 +36,6 @@
   "vim.enableNeovim": true,
   "vim.foldfix": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
-  //"vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
@@ -103,7 +104,7 @@
   "prettier.eslintIntegration": true,
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
+  "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
-  "terminal.integrated.rendererType": "dom"
+  "gitlens.views.lineHistory.enabled": true
 }

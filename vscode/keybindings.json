@@ -105,5 +105,9 @@
       "key": "enter",
       "command": "-renameFile",
       "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "workbench.action.terminal.clear"
     }
   ]
