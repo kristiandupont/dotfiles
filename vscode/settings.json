@@ -80,7 +80,6 @@
   "typescript.tsserver.log": "verbose",
   "gitlens.keymap": "chorded",
   "gitlens.historyExplorer.enabled": true,
-  "workbench.colorTheme": "Palenight Theme",
   "breadcrumbs.enabled": true,
   "window.titleBarStyle": "custom",
   "window.restoreWindows": "none",
@@ -106,5 +105,8 @@
   "prettier.singleQuote": true,
   "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true
+  "gitlens.views.lineHistory.enabled": true,
+  "workbench.colorTheme": "Palenight Theme",
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "javascript.implicitProjectConfig.checkJs": true
 }
