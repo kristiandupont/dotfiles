@@ -7,6 +7,12 @@
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
@@ -23,8 +29,10 @@
   },
   "gitlens.codeLens.enabled": false,
   "json.schemas": [
-    { 
-      "fileMatch": ["*.har"],
+    {
+      "fileMatch": [
+        "*.har"
+      ],
       "url": "https://raw.githubusercontent.com/jarib/har/master/schema.json"
     }
   ],
@@ -57,9 +65,11 @@
   ],
   "vim.insertModeKeyBindings": [
     {
-        "before": ["C-v"],
-        "after": [],
-        "commands": "editor.action.clipboardPasteAction"
+      "before": [
+        "C-v"
+      ],
+      "after": [],
+      "commands": "editor.action.clipboardPasteAction"
     }
   ],
   "vim.handleKeys": {
@@ -79,7 +89,6 @@
   "vim.disableExtension": false,
   "typescript.tsserver.log": "verbose",
   "gitlens.keymap": "chorded",
-  "gitlens.historyExplorer.enabled": true,
   "breadcrumbs.enabled": true,
   "window.titleBarStyle": "custom",
   "window.restoreWindows": "none",
@@ -100,13 +109,18 @@
     "darksalmon",
     "darkseagreen"
   ],
-  "prettier.eslintIntegration": true,
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Palenight Operator",
+  "workbench.colorTheme": "Palenight Theme",
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-  "javascript.implicitProjectConfig.checkJs": true
+  "javascript.implicitProjectConfig.checkJs": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
