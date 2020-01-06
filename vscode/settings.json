@@ -109,8 +109,6 @@
     "darksalmon",
     "darkseagreen"
   ],
-  "prettier.printWidth": 120,
-  "prettier.singleQuote": true,
   "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
