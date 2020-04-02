@@ -112,7 +112,7 @@
   "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Palenight Theme",
+  "workbench.colorTheme": "Palenight Operator",
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "javascript.implicitProjectConfig.checkJs": true,
   "[javascript]": {
@@ -120,5 +120,11 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.preferredDarkColorTheme": "Palenight Operator",
+  "window.autoDetectColorScheme": true
 }
