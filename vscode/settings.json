@@ -43,7 +43,7 @@
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
-  "vim.neovimPath": "c:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
@@ -119,6 +119,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.lintTask.options": ". --rule 'prettier/prettier: 0'",
+  "csv-preview.separator": ";",
+  "yaml.schemas": {
+    "file:///home/kristian/.vscode-server/extensions/atlassian.atlascode-2.4.11/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
