@@ -2,7 +2,6 @@
 {
   "editor.detectIndentation": false,
   "editor.fontSize": 10.5,
-  "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
@@ -30,9 +29,7 @@
   "gitlens.codeLens.enabled": false,
   "json.schemas": [
     {
-      "fileMatch": [
-        "*.har"
-      ],
+      "fileMatch": ["*.har"],
       "url": "https://raw.githubusercontent.com/jarib/har/master/schema.json"
     }
   ],
@@ -50,10 +47,17 @@
   "vim.useCtrlKeys": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "leader",
-        "m"
-      ],
+      "before": ["tab"],
+      "after": [],
+      "commands": [
+        {
+          "command": "tabout",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["leader", "m"],
       "after": [],
       "commands": [
         {
@@ -65,9 +69,7 @@
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "C-v"
-      ],
+      "before": ["C-v"],
       "after": [],
       "commands": "editor.action.clipboardPasteAction"
     }
@@ -87,7 +89,7 @@
   "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "right",
   "vim.disableExtension": false,
-  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.log": "normal",
   "gitlens.keymap": "chorded",
   "breadcrumbs.enabled": true,
   "window.titleBarStyle": "custom",
@@ -126,5 +128,20 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.preferredDarkColorTheme": "Palenight Operator",
-  "window.autoDetectColorScheme": true
+  "window.autoDetectColorScheme": true,
+  "remote.SSH.remotePlatform": {
+    "C02T10EXH040-by-ip": "linux"
+  },
+  "yaml.schemas": {
+    "file:///home/kristian/.vscode-server/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "terminal.integrated.automationShell.windows": "",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  },
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2
 }
