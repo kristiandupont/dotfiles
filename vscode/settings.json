@@ -40,7 +40,7 @@
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
-  "vim.neovimPath": "c:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.easymotion": true,
   "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
@@ -114,7 +114,7 @@
   "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Palenight Operator",
+  "workbench.colorTheme": "Default Light+",
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "javascript.implicitProjectConfig.checkJs": true,
   "[javascript]": {

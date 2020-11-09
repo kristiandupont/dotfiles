@@ -109,5 +109,49 @@
   {
     "key": "ctrl+k",
     "command": "workbench.action.terminal.clear"
+  },
+  {
+    "key": "cmd+[Minus]",
+    "command": "-wallaby.showCommandPalette"
+  },
+  {
+    "key": "cmd+[Minus]",
+    "command": "-wallaby.showCommandPalette"
+  },
+  {
+    "key": "cmd+[Minus]",
+    "command": "-wallaby.showCommandPalette"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+w",
+    "command": "wallaby.showCommandPalette"
+  },
+  {
+    "key": "cmd+[Minus]",
+    "command": "-wallaby.showCommandPalette"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.toggleMaximizedPanel"
   }
 ]
