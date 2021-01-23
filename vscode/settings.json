@@ -33,16 +33,14 @@
       "url": "https://raw.githubusercontent.com/jarib/har/master/schema.json"
     }
   ],
-  "npm.enableScriptExplorer": true,
   "search.useIgnoreFiles": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
-  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
   "vim.easymotion": true,
-  "vim.easymotionMarkerFontSize": "14",
   "vim.leader": "<space>",
   "vim.useCtrlKeys": true,
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -114,7 +112,7 @@
   "diffEditor.renderSideBySide": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Palenight Operator",
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "javascript.implicitProjectConfig.checkJs": true,
   "[javascript]": {
@@ -130,10 +128,11 @@
   "workbench.preferredDarkColorTheme": "Palenight Operator",
   "window.autoDetectColorScheme": true,
   "remote.SSH.remotePlatform": {
-    "C02T10EXH040-by-ip": "linux"
+    "C02T10EXH040-by-ip": "linux",
+    "local-ubuntu": "linux"
   },
   "yaml.schemas": {
-    "file:///home/kristian/.vscode-server/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///home/kristian/.vscode-server/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "terminal.integrated.automationShell.windows": "",
   "[jsonc]": {
@@ -143,5 +142,7 @@
     "editor.defaultFormatter": "matklad.rust-analyzer"
   },
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorWidth": 2
+  "terminal.integrated.cursorWidth": 2,
+  "gitlens.views.branches.showBranchComparison": false,
+  "slides.previewMarkdownFiles": true
 }
