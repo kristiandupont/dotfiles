@@ -148,5 +148,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "slides.previewMarkdownFiles": true
+  "slides.previewMarkdownFiles": true,
+  "git.autofetch": true
 }
