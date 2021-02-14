@@ -37,7 +37,8 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  // "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.shell.linux": "/usr/bin/fish",
   "vim.enableNeovim": true,
   "vim.foldfix": true,
   "vim.neovimPath": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
@@ -82,7 +83,6 @@
   },
   "vim.useSystemClipboard": false,
   "window.openFilesInNewWindow": "off",
-  "window.zoomLevel": 0,
   "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vs-minimal",
@@ -114,7 +114,6 @@
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "workbench.colorTheme": "Palenight Operator",
-  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -129,7 +128,9 @@
   "window.autoDetectColorScheme": true,
   "remote.SSH.remotePlatform": {
     "C02T10EXH040-by-ip": "linux",
-    "local-ubuntu": "linux"
+    "local-ubuntu": "linux",
+    "M1-Ubuntu": "linux",
+    "M1-Ubuntu-by-ip": "linux"
   },
   "yaml.schemas": {
     "file:///home/kristian/.vscode-server/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"

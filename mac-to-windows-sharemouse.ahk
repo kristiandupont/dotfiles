@@ -38,8 +38,20 @@
 ;Alt-' should insert @ like on mac
 !'::@
 
-;The ½-key should insert $ like on mac
-½::$
+;Bug in magic keyboard:
+<::$
+½::<
+
+;The ½-key should insert $ like on mac (Disabled because of the fix above)
+;½::$
+
+;F-keys map to media keys
+F13::Send {Media_Prev}
+F14::Send {Media_Play_Pause}
+F15::Send {Media_Next}
+F16::Send {Volume_Mute}
+F17::Send {Volume_Down}
+F18::Send {Volume_Up}
 
 ;Alt+backspace and arrow keys should work like ctrl+*, like on mac.
 !Backspace::Send ^{Backspace}
