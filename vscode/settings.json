@@ -21,7 +21,7 @@
   },
   "files.insertFinalNewline": true,
   "gitlens.advanced.messages": {
-    "suppressFileNotUnderSourceControlWarning": true,
+    "suppressFileNotUnderSourceControlWarning": true
   },
   "gitlens.codeLens.enabled": false,
   "json.schemas": [
@@ -37,6 +37,7 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "vim.enableNeovim": true,
+  "vim.debug.silent": true,
   "vim.foldfix": true,
   "vim.easymotion": true,
   "vim.leader": "<space>",
@@ -84,7 +85,7 @@
   "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "right",
   "vim.disableExtension": false,
-  "typescript.tsserver.log": "normal",
+  "typescript.tsserver.log": "off",
   "gitlens.keymap": "chorded",
   "breadcrumbs.enabled": true,
   "window.titleBarStyle": "custom",
@@ -107,7 +108,7 @@
     "darkseagreen"
   ],
   "diffEditor.renderSideBySide": true,
-  "workbench.colorTheme": "Palenight Operator",
+  "workbench.colorTheme": "Tomorrow Night Blue",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -144,4 +145,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
+  "liveshare.authenticationProvider": "GitHub",
+  "workbench.editor.revealIfOpen": false
 }
