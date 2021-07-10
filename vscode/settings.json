@@ -108,7 +108,7 @@
     "darkseagreen"
   ],
   "diffEditor.renderSideBySide": true,
-  "workbench.colorTheme": "Tomorrow Night Blue",
+  "workbench.colorTheme": "Astra 🌌 - Valorant",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -146,5 +146,20 @@
   },
   "git.autofetch": true,
   "liveshare.authenticationProvider": "GitHub",
-  "workbench.editor.revealIfOpen": false
+  "workbench.editor.revealIfOpen": false,
+  "rust-analyzer.inlayHints.maxLength": 10,
+  "vim.neovimPath": "/opt/homebrew/Cellar/neovim/0.4.4_2/bin/nvim",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.rules.customizations": [
+    { "rule": "prettier/prettier", "severity": "off" }
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  }
 }
