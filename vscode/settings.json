@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.detectIndentation": false,
-  "editor.fontSize": 10.5,
+  "editor.fontSize": 12.5,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
@@ -33,9 +33,22 @@
   "search.useIgnoreFiles": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 11,
-  "terminal.integrated.shell.linux": "/usr/bin/fish",
-  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.profiles.linux": {
+    "fish": {
+      "path": "/usr/bin/fish"
+    }
+  },
+  "terminal.integrated.profiles.osx": {
+    "fish": {
+      "path": "/usr/local/bin/fish",
+      "args": ["-l"]
+    }
+  },
+  "terminal.integrated.profiles.windows": {
+    "bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
   "vim.enableNeovim": true,
   "vim.debug.silent": true,
   "vim.foldfix": true,
@@ -108,7 +121,7 @@
     "darkseagreen"
   ],
   "diffEditor.renderSideBySide": true,
-  "workbench.colorTheme": "Astra 🌌 - Valorant",
+  "workbench.colorTheme": "Palenight Operator",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -161,5 +174,15 @@
     "yaml": false,
     "plaintext": false,
     "markdown": true
-  }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "editor.fontFamily": "Inconsolata, 'Courier New', monospace",
+  "editor.guides.bracketPairs": true,
+  "diffEditor.codeLens": true,
+  "git.confirmSync": false,
+  "editor.formatOnSave": true
 }
