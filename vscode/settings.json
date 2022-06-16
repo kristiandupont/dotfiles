@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.detectIndentation": false,
-  "editor.fontSize": 12.5,
+  "editor.fontSize": 13.5,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
@@ -32,7 +32,6 @@
   ],
   "search.useIgnoreFiles": true,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontSize": 11,
   "terminal.integrated.profiles.linux": {
     "fish": {
       "path": "/usr/bin/fish"
@@ -121,7 +120,7 @@
     "darkseagreen"
   ],
   "diffEditor.renderSideBySide": true,
-  "workbench.colorTheme": "Palenight Operator",
+  "workbench.colorTheme": "Palenight Theme",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -180,9 +179,20 @@
   },
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.defaultProfile.linux": "fish",
-  "editor.fontFamily": "Inconsolata, 'Courier New', monospace",
   "editor.guides.bracketPairs": true,
   "diffEditor.codeLens": true,
   "git.confirmSync": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "vscode-as-git-mergetool.settingsAssistantOnStartup": false,
+  "emmet.excludeLanguages": [
+    "markdown",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "explorer.autoReveal": "focusNoScroll",
+  "remote.localPortHost": "allInterfaces",
+  "editor.fontFamily": "helvetica",
+  "terminal.integrated.fontFamily": "Inconsolata, 'Courier New', monospace"
 }
