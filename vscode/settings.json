@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.detectIndentation": false,
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 12.5,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.tabSize": 2,
@@ -120,7 +120,7 @@
     "darkseagreen"
   ],
   "diffEditor.renderSideBySide": true,
-  "workbench.colorTheme": "Palenight Theme",
+  "workbench.colorTheme": "Palenight Operator",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -132,6 +132,7 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.preferredDarkColorTheme": "Palenight Operator",
+  "workbench.preferredLightColorTheme": "Default Light+",
   "window.autoDetectColorScheme": true,
   "remote.SSH.remotePlatform": {
     "C02T10EXH040-by-ip": "linux",
@@ -139,15 +140,8 @@
     "M1-Ubuntu": "linux",
     "M1-Ubuntu-by-ip": "linux"
   },
-  "yaml.schemas": {
-    "file:///home/kristian/.vscode-server/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "terminal.integrated.automationShell.windows": "",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer"
   },
   "[shellscript]": {
     "files.eol": "\n"
@@ -172,18 +166,18 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": true
+    "markdown": false
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
   "editor.guides.bracketPairs": true,
   "diffEditor.codeLens": true,
   "git.confirmSync": false,
   "editor.formatOnSave": true,
-  "vscode-as-git-mergetool.settingsAssistantOnStartup": false,
   "emmet.excludeLanguages": [
     "markdown",
     "javascript",
@@ -193,6 +187,8 @@
   ],
   "explorer.autoReveal": "focusNoScroll",
   "remote.localPortHost": "allInterfaces",
-  "editor.fontFamily": "helvetica",
-  "terminal.integrated.fontFamily": "Inconsolata, 'Courier New', monospace"
+  "editor.fontFamily": "Inconsolata, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Inconsolata, 'Courier New', monospace",
+  "git.mergeEditor": true,
+  "terminal.integrated.shellIntegration.enabled": true
 }
