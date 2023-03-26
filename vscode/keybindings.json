@@ -187,5 +187,16 @@
     "args": {
       "snippet": "JSON.stringify(${TM_SELECTED_TEXT}$1, null, 2)$0"
     }
+  },
+  {
+    "key": "alt+space",
+    "command": "type",
+    "when": "editorTextFocus",
+    "args": { "text": " " }
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen && !multipleEditorGroups"
   }
 ]

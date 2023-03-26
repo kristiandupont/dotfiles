@@ -54,34 +54,19 @@
   "vim.easymotion": true,
   "vim.leader": "<space>",
   "vim.useCtrlKeys": true,
+  "vim.normalModeKeyBindings": [
+    { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
+    { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<Tab>"], "commands": ["editor.action.indentLines"] },
+    { "before": ["<Shift+Tab>"], "commands": ["editor.action.outdentLines"] }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["tab"],
-      "after": [],
-      "commands": [
-        {
-          "command": "tabout",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["leader", "m"],
-      "after": [],
-      "commands": [
-        {
-          "command": "textmarker.toggleHighlight",
-          "args": []
-        }
-      ]
-    }
+    { "before": ["leader", "m"], "commands": ["textmarker.toggleHighlight"] }
   ],
   "vim.insertModeKeyBindings": [
-    {
-      "before": ["C-v"],
-      "after": [],
-      "commands": "editor.action.clipboardPasteAction"
-    }
+    { "before": ["C-v"], "commands": ["editor.action.clipboardPasteAction"] }
   ],
   "vim.handleKeys": {
     "<C-c>": false,
@@ -92,7 +77,6 @@
   },
   "vim.useSystemClipboard": false,
   "window.openFilesInNewWindow": "off",
-  "workbench.editor.enablePreview": false,
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "right",
@@ -165,8 +149,8 @@
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
-    "plaintext": false,
-    "markdown": false
+    "plaintext": true,
+    "markdown": true
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -190,5 +174,20 @@
   "editor.fontFamily": "Inconsolata, 'Courier New', monospace",
   "terminal.integrated.fontFamily": "Inconsolata, 'Courier New', monospace",
   "git.mergeEditor": true,
-  "terminal.integrated.shellIntegration.enabled": true
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "svg.preview.mode": "svg",
+  "workbench.editor.enablePreview": false,
+  "mssql.connections": [
+    {
+      "server": "settingsfailover.database.windows.net",
+      "database": "optiilotest",
+      "authenticationType": "SqlLogin",
+      "user": "Realkreditkonsulenten@lbefvai7rj",
+      "password": "",
+      "emptyPasswordInput": false,
+      "savePassword": true
+    }
+  ]
 }
