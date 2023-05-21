@@ -106,13 +106,35 @@
   "diffEditor.renderSideBySide": true,
   "workbench.colorTheme": "Palenight Operator",
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoSurround": "never"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoSurround": "never"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoSurround": "never"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoSurround": "never"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[shellscript]": {
+    "files.eol": "\n"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.inlineSuggest.enabled": false
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.preferredDarkColorTheme": "Palenight Operator",
@@ -124,36 +146,21 @@
     "M1-Ubuntu": "linux",
     "M1-Ubuntu-by-ip": "linux"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[shellscript]": {
-    "files.eol": "\n"
-  },
   "gitlens.views.branches.showBranchComparison": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "git.autofetch": true,
-  "liveshare.authenticationProvider": "GitHub",
   "workbench.editor.revealIfOpen": false,
   "rust-analyzer.inlayHints.maxLength": 10,
   "vim.neovimPath": "/opt/homebrew/Cellar/neovim/0.4.4_2/bin/nvim",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "eslint.rules.customizations": [
-    { "rule": "prettier/prettier", "severity": "off" }
+    { "rule": "prettier/prettier", "severity": "off" },
+    { "rule": "tailwindcss/classnames-order", "severity": "off" }
   ],
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
+    "yaml": true,
     "plaintext": true,
     "markdown": true
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.defaultProfile.linux": "fish",
@@ -189,5 +196,7 @@
       "emptyPasswordInput": false,
       "savePassword": true
     }
-  ]
+  ],
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "window.confirmBeforeClose": "always"
 }
