@@ -38,6 +38,10 @@
     }
   },
   "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "/bin/bash",
+      "args": ["-l"]
+    },
     "fish": {
       "path": "/usr/local/bin/fish",
       "args": ["-l"]
@@ -77,7 +81,7 @@
   },
   "vim.useSystemClipboard": false,
   "window.openFilesInNewWindow": "off",
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "vs-minimal",
   "workbench.sideBar.location": "right",
   "vim.disableExtension": false,
@@ -88,21 +92,6 @@
   "window.restoreWindows": "none",
   "textmarker.defaultHighlightColor": "#fce00c",
   "textmarker.defaultHighlightOpacity": 1,
-  "textmarker.highlightColors": [
-    "#fc800c",
-    "darkmagenta",
-    "darkolivegreen",
-    "darkslateblue",
-    "darkslategray",
-    "darkviolet",
-    "darkblue",
-    "darkturquoise",
-    "darkgray",
-    "darkkhaki",
-    "darkorange",
-    "darksalmon",
-    "darkseagreen"
-  ],
   "diffEditor.renderSideBySide": true,
   "workbench.colorTheme": "Palenight Operator",
   "[javascript]": {
@@ -136,7 +125,9 @@
   "[markdown]": {
     "editor.inlineSuggest.enabled": false
   },
-  "diffEditor.ignoreTrimWhitespace": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "workbench.preferredDarkColorTheme": "Palenight Operator",
   "workbench.preferredLightColorTheme": "Default Light+",
   "window.autoDetectColorScheme": true,
@@ -158,13 +149,15 @@
   "editor.inlineSuggest.enabled": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
     "plaintext": true,
-    "markdown": true
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "json": false
   },
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.defaultProfile.osx": "bash",
   "editor.guides.bracketPairs": true,
   "diffEditor.codeLens": true,
   "git.confirmSync": false,
@@ -198,5 +191,611 @@
     }
   ],
   "editor.unicodeHighlight.nonBasicASCII": false,
-  "window.confirmBeforeClose": "always"
+  "window.confirmBeforeClose": "always",
+  "workbench.colorCustomizations": {},
+  "html.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "python.analysis.enablePytestSupport": false,
+  "cSpell.userWords": [
+    "classname",
+    "clsx",
+    "datapoint",
+    "Dribbble",
+    "endregion",
+    "exceljs",
+    "heroicons",
+    "Kanel",
+    "Kristian",
+    "kristiandupont",
+    "mdconf",
+    "schemalint",
+    "tailwindcss",
+    "trpc"
+  ],
+  "python.analysis.logLevel": "Error",
+  "python.analysis.persistAllIndices": false,
+  "python.experiments.enabled": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.smoothScrolling": true,
+  "git.allowNoVerifyCommit": true,
+  "git.confirmNoVerifyCommit": false,
+  "textmarker.highlightColors": [
+    "#d97706",
+    "#65a30d",
+    "#0d9488",
+    "#0284c7",
+    "#4f46e5",
+    "#9333ea",
+    "#db2777"
+  ],
+  "githubPullRequests.createOnPublishBranch": "never",
+  "black-formatter.importStrategy": "fromEnvironment",
+  "terminal.integrated.scrollback": 10000,
+  "githubPullRequests.pullBranch": "never",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "modaledit.keybindings": {
+    "0": {
+      "command": "cursorMove",
+      "args": "{ to: 'wrappedLineStart', select: __selecting }"
+    },
+    "\n": [
+      "cursorDown",
+      {
+        "command": "cursorMove",
+        "args": {
+          "to": "wrappedLineFirstNonWhitespaceCharacter"
+        }
+      }
+    ],
+    " ": {
+      "m": {
+        "command": "textmarker.toggleHighlight"
+      }
+    },
+    "h": "cursorLeft",
+    "j": "cursorDown",
+    "k": "cursorUp",
+    "l": "cursorRight",
+    "$": {
+      "command": "cursorMove",
+      "args": "{ to: 'wrappedLineEnd', select: __selecting }"
+    },
+    "^": {
+      "command": "cursorMove",
+      "args": "{ to: 'wrappedLineFirstNonWhitespaceCharacter', select: __selecting }"
+    },
+    "g": {
+      "_": {
+        "command": "cursorMove",
+        "args": "{ to: 'wrappedLineLastNonWhitespaceCharacter', select: __selecting }"
+      },
+      "g": {
+        "condition": "__selecting",
+        "true": "cursorTopSelect",
+        "false": "cursorTop"
+      },
+      "J": ["editor.action.joinLines", "deleteRight"],
+      "u,U": {
+        "id": 1,
+        "help": "Change case with motion",
+        "u,U": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: __cmd.slice(0, -3) + 'V' + __rcmd[0] }"
+        },
+        "h,j,k,l,w,e,b,W,B,%": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: 'v' + __cmd.slice(0, -3) + __rcmd[0] + __rcmd[1] }"
+        },
+        "^,$,0,G,H,M,L": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: 'v' + __rcmd[0] + __rcmd[1] }"
+        },
+        "g": {
+          "g,_": {
+            "command": "modaledit.typeNormalKeys",
+            "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+          }
+        },
+        "f,t,F,T": {
+          "help": "Do until _",
+          " -~": {
+            "command": "modaledit.typeNormalKeys",
+            "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+          }
+        },
+        "a,i": {
+          "help": "Do around/inside _",
+          "w,p,b,B,t, -/,:-@,[-`,{-~": {
+            "command": "modaledit.typeNormalKeys",
+            "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+          }
+        },
+        "`,'": {
+          "help": "Do until mark _",
+          "a-z": {
+            "command": "modaledit.typeNormalKeys",
+            "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+          }
+        }
+      },
+      "t": "workbench.action.nextEditor",
+      "T": "workbench.action.previousEditor",
+      "c": "editor.action.commentLine",
+      "d": "editor.action.goToDeclaration",
+      "r": "references-view.findReferences"
+    },
+    "G": {
+      "condition": "__selecting",
+      "true": "cursorBottomSelect",
+      "false": "cursorBottom"
+    },
+    "æ": {
+      "condition": "__selecting",
+      "true": "cursorWordPartRightSelect",
+      "false": "cursorWordPartRight"
+    },
+    "ø": {
+      "condition": "__selecting",
+      "true": "cursorWordPartLeftSelect",
+      "false": "cursorWordPartLeft"
+    },
+    "w": "cursorWordStartRight",
+    "e": "cursorWordEndRight",
+    "b": "cursorWordStartLeft",
+    "W": {
+      "command": "cursorWordStartRight",
+      "repeat": "__char.match(/\\W/)"
+    },
+    "B": {
+      "command": "cursorWordStartLeft",
+      "repeat": "__char.match(/\\W/)"
+    },
+    "H": {
+      "command": "cursorMove",
+      "args": "{ to: 'viewPortTop', select: __selecting }"
+    },
+    "M": {
+      "command": "cursorMove",
+      "args": "{ to: 'viewPortCenter', select: __selecting }"
+    },
+    "L": {
+      "command": "cursorMove",
+      "args": "{ to: 'viewPortBottom', select: __selecting }"
+    },
+    "%": {
+      "condition": "__selecting",
+      "true": "editor.action.smartSelect.expand",
+      "false": "editor.action.jumpToBracket"
+    },
+    "f": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "typeAfterAccept": "hv",
+        "typeBeforeNextMatch": "l",
+        "typeAfterNextMatch": "hv",
+        "typeAfterPreviousMatch": "v"
+      }
+    },
+    "F": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "backwards": true,
+        "typeAfterAccept": "v",
+        "typeAfterNextMatch": "v",
+        "typeBeforePreviousMatch": "l",
+        "typeAfterPreviousMatch": "hv"
+      }
+    },
+    "t": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "typeAfterAccept": "hhv",
+        "typeBeforeNextMatch": "ll",
+        "typeAfterNextMatch": "hhv",
+        "typeBeforePreviousMatch": "h",
+        "typeAfterPreviousMatch": "lv"
+      }
+    },
+    "T": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "backwards": true,
+        "typeAfterAccept": "lv",
+        "typeBeforeNextMatch": "h",
+        "typeAfterNextMatch": "lv",
+        "typeBeforePreviousMatch": "ll",
+        "typeAfterPreviousMatch": "hhv"
+      }
+    },
+    ";": "modaledit.nextMatch",
+    ",": "modaledit.previousMatch",
+    "*": "findWordAtCursor.next",
+    "#": "findWordAtCursor.previous",
+    "m": {
+      "help": "Define mark _",
+      "a-z": {
+        "command": "modaledit.defineBookmark",
+        "args": "{ bookmark: __rcmd[0] }"
+      }
+    },
+    "`": {
+      "a-z": {
+        "command": "modaledit.goToBookmark",
+        "args": "{ bookmark: __rcmd[0], select: __selecting }"
+      }
+    },
+    "'": {
+      "a-z": [
+        {
+          "command": "modaledit.goToBookmark",
+          "args": "{ bookmark: __rcmd[0], select: __selecting }"
+        },
+        {
+          "command": "cursorMove",
+          "args": "{ to: 'wrappedLineFirstNonWhitespaceCharacter', select: __selecting }"
+        }
+      ]
+    },
+    "i": "modaledit.enterInsert",
+    "I": ["cursorHome", "modaledit.enterInsert"],
+    "a": [
+      {
+        "condition": "__char == ''",
+        "false": "cursorRight"
+      },
+      "modaledit.enterInsert"
+    ],
+    "A": ["cursorEnd", "modaledit.enterInsert"],
+    "o": ["editor.action.insertLineAfter", "modaledit.enterInsert"],
+    "O": ["editor.action.insertLineBefore", "modaledit.enterInsert"],
+    "v": "modaledit.toggleSelection",
+    "V": [
+      {
+        "command": "cursorMove",
+        "args": {
+          "to": "wrappedLineStart"
+        }
+      },
+      "modaledit.toggleSelection",
+      "cursorDownSelect"
+    ],
+    "x": "deleteRight",
+    "X": "deleteLeft",
+    "r,s": ["deleteRight", "modaledit.enterInsert"],
+    "S": {
+      "command": "modaledit.typeNormalKeys",
+      "args": {
+        "keys": "cc"
+      }
+    },
+    "D": [
+      "modaledit.cancelSelection",
+      "cursorEndSelect",
+      "deleteRight",
+      "modaledit.cancelSelection"
+    ],
+    "C": {
+      "command": "modaledit.typeNormalKeys",
+      "args": {
+        "keys": "Di"
+      }
+    },
+    "Y": [
+      "modaledit.cancelSelection",
+      "cursorEndSelect",
+      "editor.action.clipboardCopyAction",
+      "modaledit.cancelSelection"
+    ],
+    "p": [
+      {
+        "condition": "__selecting",
+        "false": "cursorRight"
+      },
+      "editor.action.clipboardPasteAction",
+      "modaledit.cancelSelection"
+    ],
+    "P": ["editor.action.clipboardPasteAction", "modaledit.cancelSelection"],
+    "J": "editor.action.joinLines",
+    "u": ["undo", "modaledit.cancelSelection"],
+    ".": "modaledit.repeatLastChange",
+    "d,y,c,<,>,=": {
+      "id": 2,
+      "help": "Edit with motion",
+      "d,y,c,<,>,=": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: __cmd.slice(0, -2) + 'V' + (__rcmd[0] =='c' ? 'dO' : __rcmd[0]) }"
+      },
+      "h,j,k,l,w,e,b,W,B,%": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: 'v' + __cmd.slice(0, -2) + __rcmd[0] + __rcmd[1] }"
+      },
+      "^,$,0,G,H,M,L": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: 'v' + __rcmd[0] + __rcmd[1] }"
+      },
+      "g": {
+        "g,_": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+        }
+      },
+      "f,t,F,T": {
+        "help": "Do until _",
+        " -~": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+        }
+      },
+      "a,i": {
+        "help": "Do around/inside _",
+        "w,p,b,B,t, -/,:-@,[-`,{-~": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+        }
+      },
+      "`,'": {
+        "help": "Do until mark _",
+        "a-z": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: 'v' + __rcmd[1] + __rcmd[0] + __rcmd[2] }"
+        }
+      },
+      "æ,ø": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: 'v' + __cmd.slice(0, -2) + __rcmd[0] + __rcmd[1] }"
+      }
+    },
+    "1-9": {
+      "id": 3,
+      "help": "Repeat / go to line",
+      "0-9": 3,
+      "h,j,k,l,w,e,b,W,B,u,%": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: __rcmd[0] }",
+        "repeat": "parseInt(__cmd)"
+      },
+      "v": {
+        "command": "cursorRightSelect",
+        "repeat": "parseInt(__cmd)"
+      },
+      "V": {
+        "command": "expandLineSelection",
+        "repeat": "parseInt(__cmd)"
+      },
+      "s": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: parseInt(__cmd) + 'vc' }"
+      },
+      "S": {
+        "command": "modaledit.typeNormalKeys",
+        "args": "{ keys: parseInt(__cmd) + 'cc' }"
+      },
+      "J": [
+        {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: parseInt(__cmd) + 'VJ' }"
+        },
+        "modaledit.cancelSelection"
+      ],
+      "G": [
+        {
+          "command": "revealLine",
+          "args": "{ lineNumber: parseInt(__cmd) - 1, at: 'top' }"
+        },
+        {
+          "command": "cursorMove",
+          "args": {
+            "to": "viewPortTop"
+          }
+        }
+      ],
+      "g": {
+        "g": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: parseInt(__cmd) + 'G' }"
+        },
+        "J": {
+          "command": "modaledit.typeNormalKeys",
+          "args": "{ keys: __cmd.slice(-2) }",
+          "repeat": "parseInt(__cmd)"
+        },
+        "u,U": 1
+      },
+      "d,c,y,<,>,=": 2
+    },
+    "/": [
+      {
+        "command": "modaledit.search",
+        "args": {
+          "caseSensitive": true,
+          "wrapAround": true
+        }
+      }
+    ],
+    "?": {
+      "command": "modaledit.search",
+      "args": {
+        "backwards": true,
+        "caseSensitive": true,
+        "wrapAround": true
+      }
+    },
+    "n": "modaledit.nextMatch",
+    "N": "modaledit.previousMatch",
+    ":": "workbench.action.showCommands",
+    "z": {
+      "z": {
+        "command": "revealLine",
+        "args": "{ lineNumber: __line, at: 'center' }"
+      },
+      "a": {
+        "command": "editor.toggleFold"
+      }
+    },
+    "Z": {
+      "help": "Z - Close and save, Q - Close without saving",
+      "Z": [
+        "workbench.action.files.save",
+        "workbench.action.closeActiveEditor"
+      ],
+      "Q": "workbench.action.closeActiveEditor"
+    }
+  },
+  "modaledit.selectbindings": {
+    "l": "cursorRightSelect",
+    "h": "cursorLeftSelect",
+    "j": "cursorDownSelect",
+    "k": "cursorUpSelect",
+    "w": "cursorWordStartRightSelect",
+    "e": "cursorWordEndRightSelect",
+    "b": "cursorWordStartLeftSelect",
+    "W": {
+      "command": "cursorWordStartRightSelect",
+      "repeat": "__char.match(/\\W/)"
+    },
+    "B": {
+      "command": "cursorWordStartLeftSelect",
+      "repeat": "__char.match(/\\W/)"
+    },
+    "f": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "selectTillMatch": true
+      }
+    },
+    "F": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "backwards": true,
+        "selectTillMatch": true
+      }
+    },
+    "t": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "typeAfterAccept": "h",
+        "typeBeforeNextMatch": "l",
+        "typeAfterNextMatch": "h",
+        "typeBeforePreviousMatch": "h",
+        "typeAfterPreviousMatch": "l",
+        "selectTillMatch": true
+      }
+    },
+    "T": {
+      "command": "modaledit.search",
+      "args": {
+        "acceptAfter": 1,
+        "backwards": true,
+        "typeAfterAccept": "l",
+        "typeBeforeNextMatch": "h",
+        "typeAfterNextMatch": "l",
+        "typeBeforePreviousMatch": "l",
+        "typeAfterPreviousMatch": "h",
+        "selectTillMatch": true
+      }
+    },
+    "a": {
+      "w": [
+        {
+          "command": "modaledit.selectBetween",
+          "args": "{ from: '\\\\W', to: '\\\\W', regex: true, inclusive: true }"
+        }
+      ],
+      "p": [
+        {
+          "command": "modaledit.selectBetween",
+          "args": "{ from: '(?<=\\\\r?\\\\n)\\\\s*\\\\r?\\\\n', to: '(?<=\\\\r?\\\\n)\\\\s*\\\\r?\\\\n', regex: true, inclusive: true, docScope: true }"
+        }
+      ],
+      " -/,:-@,[-`,{-~": [
+        {
+          "command": "modaledit.selectBetween",
+          "args": "{ from: __rcmd[0], to: __rcmd[0], inclusive: true }"
+        }
+      ],
+      "(,),b": [
+        {
+          "command": "extension.selectParenthesisOuter"
+        }
+      ],
+      "{,},B": [
+        {
+          "command": "extension.selectCurlyBracketsOuter"
+        }
+      ],
+      "[,]": [
+        {
+          "command": "extension.selectSquareBracketsOuter"
+        }
+      ],
+      ">": [
+        {
+          "command": "editor.emmet.action.balanceOut"
+        }
+      ]
+    },
+    "i": {
+      "w": [
+        {
+          "command": "modaledit.selectBetween",
+          "args": "{ from: '\\\\W', to: '\\\\W', regex: true, inclusive: false }"
+        }
+      ],
+      "p": [
+        {
+          "command": "modaledit.selectBetween",
+          "args": "{ from: '(?<=\\\\r?\\\\n)\\\\s*\\\\r?\\\\n', to: '(?<=\\\\r?\\\\n)\\\\s*\\\\r?\\\\n', regex: true, inclusive: false, docScope: true }"
+        }
+      ],
+      " -/,:-@,[-`,{-~": [
+        {
+          "command": "modaledit.selectBetween",
+          "args": "{ from: __rcmd[0], to: __rcmd[0], inclusive: false }"
+        }
+      ],
+      "(,),b": [
+        {
+          "command": "extension.selectParenthesis"
+        }
+      ],
+      "{,},B": [
+        {
+          "command": "extension.selectCurlyBrackets"
+        }
+      ],
+      "[,]": [
+        {
+          "command": "extension.selectSquareBrackets"
+        }
+      ],
+      "<": [
+        {
+          "command": "extension.selectAngleBrackets"
+        }
+      ],
+      ">": [
+        {
+          "command": "editor.emmet.action.balanceIn"
+        }
+      ]
+    },
+    ">": ["editor.action.indentLines", "modaledit.cancelSelection"],
+    "<": ["editor.action.outdentLines", "modaledit.cancelSelection"],
+    "=": ["editor.action.formatSelection", "modaledit.cancelSelection"],
+    "d,x": ["deleteRight", "modaledit.cancelSelection"],
+    "c": ["deleteRight", "modaledit.enterInsert"],
+    "y": ["editor.action.clipboardCopyAction", "modaledit.cancelSelection"],
+    "u": ["editor.action.transformToLowercase"],
+    "U": ["editor.action.transformToUppercase"]
+  }
 }

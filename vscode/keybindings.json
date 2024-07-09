@@ -202,5 +202,10 @@
   {
     "key": "alt+space",
     "command": "editor.action.inlineSuggest.trigger"
+  },
+  {
+    "key": "alt+cmd+j",
+    "command": "-liveshare.join",
+    "when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
   }
 ]
