@@ -234,7 +234,6 @@
   "black-formatter.importStrategy": "fromEnvironment",
   "terminal.integrated.scrollback": 10000,
   "githubPullRequests.pullBranch": "never",
-  "javascript.updateImportsOnFileMove.enabled": "never",
   "github.copilot.editor.enableAutoCompletions": true,
   "modaledit.keybindings": {
     "0": {
