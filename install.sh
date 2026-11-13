@@ -43,6 +43,3 @@ if [ -e "$VSCODE_DIR" ]; then
 	fi
 	ln -s "$(pwd)/vscode/snippets" "$VSCODE_DIR"
 fi
-
-mv ~/.hyper.js ~/.hyper.js_
-ln -s "$(pwd)/.hyper.js" ~/.hyper.js
